@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="60%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g2)" />
+  <circle cx="360" cy="260" r="230" fill="#f59e0b" opacity="0.2" />
+  <circle cx="1280" cy="720" r="280" fill="#8b5cf6" opacity="0.17" />
+  <rect x="120" y="140" width="520" height="120" rx="26" fill="#ffffff" opacity="0.12" />
+  <text x="150" y="220" fill="#fef3c7" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Rocket Games</text>
+  <text x="150" y="285" fill="#ede9fe" font-size="32" font-family="Segoe UI, Arial, sans-serif">E-commerce + MVC + Autenticação</text>
+</svg>

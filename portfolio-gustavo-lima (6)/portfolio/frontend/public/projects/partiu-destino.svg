@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g1)" />
+  <circle cx="1280" cy="240" r="260" fill="#22d3ee" opacity="0.22" />
+  <circle cx="330" cy="760" r="320" fill="#818cf8" opacity="0.18" />
+  <rect x="120" y="140" width="500" height="110" rx="24" fill="#ffffff" opacity="0.12" />
+  <text x="150" y="215" fill="#f8fafc" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Partiu Destino</text>
+  <text x="150" y="280" fill="#dbeafe" font-size="32" font-family="Segoe UI, Arial, sans-serif">TCC • Backend + Painel + App</text>
+  <rect x="150" y="660" width="320" height="60" rx="30" fill="#ffffff" opacity="0.16" />
+  <text x="190" y="702" fill="#f8fafc" font-size="24" font-family="Segoe UI, Arial, sans-serif">Projeto em destaque</text>
+</svg>

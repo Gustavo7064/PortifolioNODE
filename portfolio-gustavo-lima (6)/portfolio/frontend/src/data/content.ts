@@ -91,7 +91,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Deixei de pensar em projetos isolados e passei a pensar em arquitetura de produto: como diferentes camadas (API, painel, app) conversam entre si. Foi reconhecido como um dos melhores projetos da turma.',
     tags: ['Node.js', 'Express', 'ASP.NET Core MVC', 'Flutter', 'Dart', 'API REST'],
-    image: '/projects/partiu-destino.jpg',
+    image: '/projects/partiu-destino.svg',
     repos: [
       { label: 'Painel Web (ASP.NET)', url: 'https://github.com/Gustavo7064/Agencia-de-Turismo-ASPNET' },
       { label: 'App Mobile (Flutter)', url: 'https://github.com/Gustavo7064/Partiu-Destino-Mobile' },
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Foi a virada de pequenos exercícios para um sistema completo — a primeira vez que precisei pensar em organização de projeto, não só em uma funcionalidade isolada.',
     tags: ['C#', 'ASP.NET Core MVC', 'MySQL', 'E-commerce'],
-    image: '/projects/rocket-games.jpg',
+    image: '/projects/rocket-games.svg',
     githubUrl: 'https://github.com/Gustavo7064/Loja-de-Jogos-ASPNET',
     // TODO: troque pelo link real do vídeo no YouTube
     youtubeUrl: 'https://www.youtube.com/watch?v=ZTcwgbgJBvM',
@@ -155,7 +155,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Foi o momento em que decidi focar em back-end. Antes disso eu vinha migrando entre C#, ASP.NET e front-end; aqui percebi onde queria me aprofundar de verdade.',
     tags: ['Node.js', 'Express', 'API REST', 'JavaScript'],
-    image: '/projects/api-rest-node.jpg',
+    image: '/projects/api-rest-node.svg',
     githubUrl: 'https://github.com/Gustavo7064/API-REST-NODE',
     featured: true,
   },
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Percebi que a arquitetura MVC que eu vinha aprendendo se aplicava a qualquer domínio de negócio — não era conhecimento preso a um projeto específico.',
     tags: ['C#', 'ASP.NET Core MVC', 'MVC'],
-    image: '/projects/olimpiadas-wiki.jpg',
+    image: '/projects/olimpiadas-wiki.svg',
     githubUrl: 'https://github.com/Gustavo7064/Olimpiadas-Wiki-ASPNET',
     featured: false,
   },
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Passei a pensar em quem usa o sistema: nem todo usuário deveria ver ou fazer tudo. Permissão deixou de ser detalhe e virou parte do design do sistema desde o início.',
     tags: ['C#', 'ASP.NET Core MVC', '.NET 8', 'MySQL', 'BCrypt', 'Permissões'],
-    image: '/projects/salao-de-beleza.jpg',
+    image: '/projects/salao-de-beleza.svg',
     githubUrl: 'https://github.com/Gustavo7064/Salao-de-Beleza-ASPNET',
     // TODO: troque pelo link real do vídeo no YouTube
     youtubeUrl: 'https://www.youtube.com/watch?v=SEU_VIDEO_AQUI',

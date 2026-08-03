@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="70%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g4)" />
+  <rect x="140" y="180" width="1320" height="620" rx="42" fill="#ffffff" opacity="0.10" />
+  <circle cx="430" cy="370" r="140" fill="#f8fafc" opacity="0.16" />
+  <circle cx="1120" cy="420" r="190" fill="#dbeafe" opacity="0.14" />
+  <text x="180" y="280" fill="#eff6ff" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Olimpíadas Wiki</text>
+  <text x="180" y="345" fill="#dbeafe" font-size="32" font-family="Segoe UI, Arial, sans-serif">Enciclopédia digital dos Jogos Olímpicos</text>
+</svg>

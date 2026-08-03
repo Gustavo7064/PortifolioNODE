@@ -6,6 +6,9 @@ import GlassCard from '@/components/ui/GlassCard';
 import { projects } from '@/data/content';
 
 export default function Projects() {
+  const featuredProject = projects.find((project) => project.featured) ?? projects[0];
+  const otherProjects = projects.filter((project) => project.id !== featuredProject?.id);
+
   return (
     <section id="projetos" className="section-shell py-24 md:py-32">
       <SectionHeading
@@ -14,8 +17,48 @@ export default function Projects() {
         description="Do primeiro CRUD ao trabalho de conclusão de curso — cada projeto marca uma etapa da minha evolução. Clique para ver como cada um foi construído."
       />
 
+      {featuredProject && (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-8"
+        >
+          <Link to={`/projeto/${featuredProject.id}`} className="group block">
+            <GlassCard className="overflow-hidden">
+              <div className="relative aspect-[16/8] md:aspect-[21/9] overflow-hidden">
+                <img
+                  src={featuredProject.image}
+                  alt={`Capa do projeto ${featuredProject.title}`}
+                  loading="eager"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-base-950 via-base-950/55 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-indigo-500/10" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/90 mb-3">Projeto em destaque</p>
+                  <h3 className="font-display text-2xl md:text-3xl font-semibold text-white mb-3">
+                    {featuredProject.title}
+                  </h3>
+                  <p className="max-w-2xl text-sm md:text-base text-ink-300 mb-4">
+                    {featuredProject.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-200 transition-colors group-hover:bg-cyan-500/20">
+                    Ver estudo de caso <FiArrowUpRight size={14} />
+                  </span>
+                </div>
+              </div>
+            </GlassCard>
+          </Link>
+        </motion.div>
+      )}
+
       <div className="grid md:grid-cols-2 gap-6">
-        {projects.map((project, i) => (
+        {otherProjects.map((project, i) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 30 }}
