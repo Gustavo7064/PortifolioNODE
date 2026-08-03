@@ -7,8 +7,8 @@ export const profile = {
     'Construo sistemas com Node.js, TypeScript, Express, ASP.NET Core e C# — evoluindo passo a passo, dos fundamentos da web até APIs completas, sempre com foco em back-end.',
   github: 'https://github.com/Gustavo7064',
   // TODO: troque pelo seu LinkedIn e email reais
-  linkedin: 'https://linkedin.com/in/SEU-USUARIO',
-  email: 'seuemail@exemplo.com',
+  linkedin: 'https://www.linkedin.com/in/gustavo-lima-b419822ab/',
+  email: 'gustavorochamaciel2007@gmail.com',
   cvUrl: '/cv-gustavo-lima.pdf',
   githubUsername: 'Gustavo7064',
 };
@@ -355,8 +355,8 @@ export const timeline: TimelineItem[] = [
 ];
 
 export const stats: StatItem[] = [
-  { label: 'Projetos', value: 10 },
+  { label: 'Projetos', value: 20},
   { label: 'Tecnologias', value: 23 },
-  { label: 'Meses de curso técnico', value: 8 },
+  { label: 'Meses de curso técnico', value: 16 },
   { label: 'Anos de experiência prévia', value: 3 },
 ];
