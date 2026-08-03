@@ -98,9 +98,12 @@ export const projects: Project[] = [
       // TODO: adicione o link do repositório do backend Node.js/Express do Partiu Destino, se estiver publicado
     ],
     // TODO: troque pelo link real do vídeo no YouTube
-    youtubeUrl: 'https://www.youtube.com/watch?v=SEU_VIDEO_AQUI',
-    featured: true,
+    youtubeUrl: 'https://www.youtube.com/watch?v=UjfByoxlJE8',
+    // Exemplo de segundo vídeo na mesma página; troque pelo link real desejado
+    videoUrls: ['https://www.youtube.com/watch?v=_Vmr7WX94_Y'],
+    featured: true,  
   },
+
   {
     id: 'rocket-games',
     title: 'Rocket Games — Meu Primeiro Sistema Completo',
@@ -127,7 +130,7 @@ export const projects: Project[] = [
     image: '/projects/rocket-games.jpg',
     githubUrl: 'https://github.com/Gustavo7064/Loja-de-Jogos-ASPNET',
     // TODO: troque pelo link real do vídeo no YouTube
-    youtubeUrl: 'https://www.youtube.com/watch?v=SEU_VIDEO_AQUI',
+    youtubeUrl: 'https://www.youtube.com/watch?v=ZTcwgbgJBvM',
     featured: true,
   },
   {

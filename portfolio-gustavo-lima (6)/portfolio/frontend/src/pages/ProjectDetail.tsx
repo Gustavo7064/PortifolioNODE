@@ -28,8 +28,15 @@ export default function ProjectDetail() {
     return <Navigate to="/" replace />;
   }
 
-  const embedUrl = getYouTubeEmbedUrl(project.youtubeUrl);
-  const isPlaceholderVideo = project.youtubeUrl?.includes('SEU_VIDEO_AQUI');
+  const videoLinks = [project.youtubeUrl, ...(project.videoUrls ?? [])].filter(
+    (url): url is string => Boolean(url) && !url.includes('SEU_VIDEO_AQUI')
+  );
+
+  const videoEmbeds = videoLinks
+    .map((url) => ({ url, embedUrl: getYouTubeEmbedUrl(url) }))
+    .filter((video): video is { url: string; embedUrl: string } => Boolean(video.embedUrl));
+
+  const hasVideos = videoEmbeds.length > 0;
 
   return (
     <article className="section-shell pt-32 pb-24 md:pt-40 md:pb-32">
@@ -83,7 +90,7 @@ export default function ProjectDetail() {
         )}
       </motion.div>
 
-      {/* Video */}
+      {/* Vídeos */}
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -91,21 +98,26 @@ export default function ProjectDetail() {
         variants={fadeUp}
         className="mt-12"
       >
-        {embedUrl && !isPlaceholderVideo ? (
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden glass">
-            <iframe
-              src={embedUrl}
-              title={`Vídeo de demonstração — ${project.title}`}
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+        {hasVideos ? (
+          <div className="space-y-6">
+            {videoEmbeds.map((video, index) => (
+              <div key={`${video.url}-${index}`} className="relative w-full aspect-video rounded-2xl overflow-hidden glass">
+                <iframe
+                  src={video.embedUrl}
+                  title={`Vídeo de demonstração ${index + 1} — ${project.title}`}
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ))}
           </div>
         ) : (
           <div className="w-full aspect-video rounded-2xl glass flex items-center justify-center text-center px-6">
             <p className="text-sm text-ink-600 font-mono">
               Vídeo de demonstração em breve — adicione o link do YouTube em{' '}
-              <code className="text-cyan-400">youtubeUrl</code> no <code className="text-cyan-400">content.ts</code>.
+              <code className="text-cyan-400">youtubeUrl</code> ou em <code className="text-cyan-400">videoUrls</code> no{' '}
+              <code className="text-cyan-400">content.ts</code>.
             </p>
           </div>
         )}

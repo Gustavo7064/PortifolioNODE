@@ -15,6 +15,7 @@ export interface Project {
   githubUrl?: string;
   repos?: { label: string; url: string }[];
   youtubeUrl?: string;
+  videoUrls?: string[];
   liveUrl?: string;
   featured: boolean;
   // Detail-page content
