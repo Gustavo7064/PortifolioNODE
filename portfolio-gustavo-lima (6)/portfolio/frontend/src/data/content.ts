@@ -357,6 +357,6 @@ export const timeline: TimelineItem[] = [
 export const stats: StatItem[] = [
   { label: 'Projetos', value: 20},
   { label: 'Tecnologias', value: 23 },
-  { label: 'Meses de curso técnico', value: 16 },
+  { label: 'Meses de curso técnico', value: 18 },
   { label: 'Anos de experiência prévia', value: 3 },
 ];
