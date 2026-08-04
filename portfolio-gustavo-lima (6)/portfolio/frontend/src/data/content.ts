@@ -11,6 +11,7 @@ export const profile = {
   email: 'gustavorochamaciel2007@gmail.com',
   cvUrl: 'https://drive.google.com/file/d/1JyxlLQPwFj7RjUCppXFcFbg5dvvDdEhq/view?usp=sharing',
   githubUsername: 'Gustavo7064',
+  githubVisibleRepos: ['Relogio', 'API-REST-NODE', 'Loja-de-Jogos-ASPNET'],
 };
 
 export const about = {
@@ -277,8 +278,8 @@ export const timeline: TimelineItem[] = [
   { year: 'Ago 2025', title: 'Meus primeiros sistemas grandes', description: 'Rocket Games (ASP.NET Core MVC) foi meu primeiro sistema completo — arquitetura MVC, autenticação, banco de dados e CRUD. Em paralelo, minhas primeiras APIs REST com Node.js e Express, e o início de Flutter e Dart.' },
   { year: 'Set 2025 - julho 2026', title: 'Sistemas ASP.NET completos', description: 'Olimpíadas Wiki, Salão de Beleza e Biblioteca consolidaram meu domínio de aplicações web completas em ASP.NET Core MVC, enquanto continuava estudando Node.js em paralelo.' },
   { year: 'Jan 2026 - Julho 2026 ', title: 'Partiu Destino', description: 'Meu maior projeto: backend próprio em Node.js e Express, painel administrativo em ASP.NET Core MVC e aplicativo mobile em Flutter, com integração completa entre as três camadas. Reconhecido como um dos melhores projetos da turma.' },
-  { year: 'Pós-curso', title: 'Origamid: Node.js & TypeScript', description: 'Aprofundando APIs, arquitetura, organização de projetos, tipagem e boas práticas — meu foco definitivamente voltado para back-end.' },
-  { year: 'Hoje', title: 'Este Portfólio', description: 'Construído com Node.js, Express, TypeScript e PostgreSQL — e também meu playground para aprender Docker, deploy e DevOps. Representa minha evolução até este momento.' },
+  { year: 'Pós-curso julho 2026 - atual', title: 'Origamid: Node.js & TypeScript', description: 'Aprofundando APIs, arquitetura, organização de projetos, tipagem e boas práticas — meu foco definitivamente voltado para back-end.' },
+  { year: 'atual', title: 'Este Portfólio', description: 'Construído com Node.js, Express, TypeScript e PostgreSQL — e também meu playground para aprender Docker, deploy e DevOps. Representa minha evolução até este momento.' },
 ];
 
 export const stats: StatItem[] = [

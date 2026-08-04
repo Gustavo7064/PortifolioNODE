@@ -25,7 +25,7 @@ export default function Github() {
         <SectionHeading
           eyebrow="GitHub"
           title="Direto do repositório"
-          description="Últimos projetos atualizados, buscados em tempo real na API pública do GitHub."
+          description="Repositórios selecionados manualmente para aparecerem nesta seção."
         />
         <GradientButton
           as="a"
