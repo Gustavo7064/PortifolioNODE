@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="50%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g10)" />
+  <circle cx="1280" cy="280" r="200" fill="#86efac" opacity="0.16" />
+  <rect x="200" y="200" width="1200" height="600" rx="38" fill="#ffffff" opacity="0.10" />
+  <text x="250" y="360" fill="#ecfdf5" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Descobrindo o Signo</text>
+  <text x="250" y="430" fill="#d1fae5" font-size="32" font-family="Segoe UI, Arial, sans-serif">Meu primeiro projeto web</text>
+</svg>

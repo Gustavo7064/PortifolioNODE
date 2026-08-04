@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="40%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g9)" />
+  <rect x="260" y="190" width="1080" height="620" rx="42" fill="#ffffff" opacity="0.10" />
+  <rect x="360" y="300" width="300" height="80" rx="22" fill="#f5f3ff" opacity="0.16" />
+  <rect x="360" y="410" width="240" height="20" rx="10" fill="#e9d5ff" />
+  <rect x="360" y="450" width="290" height="20" rx="10" fill="#ddd6fe" />
+  <text x="360" y="620" fill="#faf5ff" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Bhaskara</text>
+  <text x="360" y="680" fill="#ede9fe" font-size="32" font-family="Segoe UI, Arial, sans-serif">Calculadora com lógica matemática</text>
+</svg>

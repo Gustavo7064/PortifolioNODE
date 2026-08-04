@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiDownload, FiArrowRight } from 'react-icons/fi';
 import GradientButton from '@/components/ui/GradientButton';
@@ -17,6 +18,15 @@ const item = {
 };
 
 export default function Hero() {
+  const [showCvMessage, setShowCvMessage] = useState(false);
+
+  useEffect(() => {
+    if (!showCvMessage) return;
+
+    const timer = window.setTimeout(() => setShowCvMessage(false), 2200);
+    return () => window.clearTimeout(timer);
+  }, [showCvMessage]);
+
   return (
     <section id="top" className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
       <div className="section-shell grid md:grid-cols-2 gap-16 items-center">
@@ -55,9 +65,22 @@ export default function Hero() {
             <GradientButton as="a" href={profile.linkedin} target="_blank" rel="noreferrer" variant="secondary" icon={<FiLinkedin size={16} />}>
               LinkedIn
             </GradientButton>
-            <GradientButton as="a" href={profile.cvUrl} variant="ghost" icon={<FiDownload size={16} />}>
-              Download CV
-            </GradientButton>
+            <div className="flex flex-col items-start gap-2">
+              <GradientButton
+                as="a"
+                href={profile.cvUrl}
+                target="_blank"
+                rel="noreferrer"
+                variant="ghost"
+                icon={<FiDownload size={16} />}
+                onClick={() => setShowCvMessage(true)}
+              >
+                Baixar CV
+              </GradientButton>
+              {showCvMessage && (
+                <p className="text-sm text-cyan-300">Espero nos vermos em breve!</p>
+              )}
+            </div>
           </motion.div>
         </motion.div>
 

@@ -9,7 +9,7 @@ export const profile = {
   // TODO: troque pelo seu LinkedIn e email reais
   linkedin: 'https://www.linkedin.com/in/gustavo-lima-b419822ab/',
   email: 'gustavorochamaciel2007@gmail.com',
-  cvUrl: '/cv-gustavo-lima.pdf',
+  cvUrl: 'https://drive.google.com/file/d/1JyxlLQPwFj7RjUCppXFcFbg5dvvDdEhq/view?usp=sharing',
   githubUsername: 'Gustavo7064',
 };
 
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     mindsetShift:
       'Cada novo sistema ASP.NET reforçava a mesma lição: separar responsabilidades (Model, View, Controller) torna qualquer sistema mais fácil de manter e evoluir.',
     tags: ['C#', 'ASP.NET Core MVC', 'MySQL', 'MVC'],
-    image: '/projects/biblioteca-mvc.jpg',
+    image: '/projects/biblioteca-mvc.svg',
     // TODO: adicione o link do repositório no GitHub
     githubUrl: 'https://github.com/Gustavo7064/SEU-REPO-BIBLIOTECA',
     featured: false,
@@ -263,84 +263,8 @@ export const projects: Project[] = [
     mindsetShift:
       'Deixei de pensar só em interface e comecei a pensar em como estruturar a lógica por trás dela — o ponto de virada que consolidou minha entrada no back-end.',
     tags: ['C#', '.NET', 'POO', 'Lógica de negócio'],
-    image: '/projects/hamburgueria.jpg',
+    image: '/projects/hamburgueria.svg',
     githubUrl: 'https://github.com/Gustavo7064/Sistema-de-Gestao-de-Hamburgueria',
-    featured: false,
-  },
-  {
-    id: 'relogio-digital',
-    title: 'Relógio Digital — Consolidando JavaScript',
-    description:
-      'Entre março e junho de 2025, projeto para praticar arrays, datas e atualização dinâmica de interface — parte da minha consolidação em JavaScript puro.',
-    longDescription:
-      'Aplicação que exibe data, hora e dia da semana em tempo real, parte de uma sequência de pequenos projetos (junto com Gerador de Números Ímpares e Brasil States Info) para consolidar lógica de programação em JavaScript.',
-    objective:
-      'Praticar manipulação de datas, arrays e atualização dinâmica de interface em JavaScript puro, consolidando fundamentos antes de avançar para sistemas maiores.',
-    howItWasBuilt:
-      'Aplicação em HTML, CSS e JavaScript puro, atualizando data, hora e dia da semana em tempo real na interface, sem recarregar a página.',
-    features: [
-      'Exibição de data, hora e dia da semana em tempo real',
-      'Atualização dinâmica da interface',
-      'Uso de arrays para os dias da semana',
-    ],
-    whatILearned:
-      'Pratiquei arrays, manipulação de datas e atualização dinâmica de interface — junto com os exercícios de Gerador de Números Ímpares (loops e condicionais) e Brasil States Info (switch case e organização de JavaScript) do mesmo período, fechei o semestre com uma base sólida em JavaScript.',
-    mindsetShift:
-      'Esses pequenos projetos, feitos em sequência, foram onde JavaScript deixou de ser "só sintaxe" e virou uma ferramenta que eu já sabia usar com confiança para resolver problemas.',
-    tags: ['JavaScript', 'HTML5', 'CSS3', 'DOM'],
-    image: '/projects/relogio-digital.jpg',
-    githubUrl: 'https://github.com/Gustavo7064/Relogio',
-    featured: false,
-  },
-  {
-    id: 'calculadora-bhaskara',
-    title: 'Calculadora de Bhaskara',
-    description:
-      'Projeto de fevereiro de 2025 para praticar manipulação de DOM, validação e lógica matemática, enquanto aprofundava C# e Orientação a Objetos em paralelo.',
-    longDescription:
-      'Aplicação web que calcula as raízes de uma equação de segundo grau usando a fórmula de Bhaskara, com validação dos dados informados.',
-    objective:
-      'Praticar manipulação de DOM, validação de dados e lógica matemática aplicando a fórmula de Bhaskara para resolver equações de segundo grau.',
-    howItWasBuilt:
-      'Aplicação em HTML, CSS e JavaScript, recebendo os coeficientes da equação, validando os dados informados e calculando as raízes com a fórmula de Bhaskara.',
-    features: [
-      'Cálculo das raízes de uma equação de segundo grau',
-      'Validação dos dados informados pelo usuário',
-      'Exibição dinâmica do resultado sem recarregar a página',
-    ],
-    whatILearned:
-      'Reforcei manipulação de DOM e validação de dados, e pratiquei tradução de lógica matemática para código — enquanto, em paralelo, aprofundava C# e Orientação a Objetos.',
-    mindsetShift:
-      'Comecei a perceber que programar é, na prática, traduzir um problema (nesse caso, matemático) em passos que o computador consegue seguir.',
-    tags: ['JavaScript', 'HTML5', 'CSS3', 'Lógica matemática'],
-    image: '/projects/calculadora-bhaskara.jpg',
-    githubUrl: 'https://github.com/Gustavo7064/Calculadora-de-Bhaskara',
-    featured: false,
-  },
-  {
-    id: 'descobrindo-o-signo',
-    title: 'Descobrindo o Signo',
-    description:
-      'Meu primeiro projeto na ETEC, em janeiro de 2025: uma aplicação que calcula signo, idade, mês e dia da semana de nascimento.',
-    longDescription:
-      'Primeiro projeto desenvolvido no início do Técnico em Desenvolvimento de Sistemas, aplicando os primeiros conceitos de HTML, CSS e JavaScript.',
-    objective:
-      'Desenvolver uma aplicação capaz de calcular o signo do usuário a partir da data de nascimento informada, junto com idade, mês e dia da semana de nascimento.',
-    howItWasBuilt:
-      'Página em HTML, CSS e JavaScript puro, com manipulação do DOM para atualizar a interface sem recarregar a página e validação dos dados informados.',
-    features: [
-      'Cálculo do signo a partir da data de nascimento',
-      'Cálculo de idade, mês e dia da semana de nascimento',
-      'Validação de dados com manipulação do DOM',
-    ],
-    whatILearned:
-      'Foi meu primeiro projeto de verdade no curso técnico — pratiquei manipulação de DOM, validação e lógica condicional, a base de tudo que veio depois.',
-    mindsetShift:
-      'Foi aqui que uma página deixou de ser estática pra mim e passou a responder às ações do usuário — o primeiro passo de toda a evolução que veio a seguir.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'DOM'],
-    image: '/projects/descobrindo-o-signo.jpg',
-    // TODO: adicione o link do repositório no GitHub
-    githubUrl: 'https://github.com/Gustavo7064/SEU-REPO-DESCOBRINDO-O-SIGNO',
     featured: false,
   },
 ];
@@ -351,8 +275,8 @@ export const timeline: TimelineItem[] = [
   { year: 'Fev 2025', title: 'Calculadora de Bhaskara & consolidação em C#', description: 'Pratiquei manipulação de DOM, validação e lógica matemática, enquanto aprofundava C# e Orientação a Objetos — base que logo apliquei no Sistema de Gestão de Hamburgueria.' },
   { year: 'Mar–Jun 2025', title: 'Consolidando JavaScript', description: 'Relógio Digital, Gerador de Números Ímpares e Brasil States Info: arrays, datas, loops, switch case. Ao final do semestre já tinha uma base sólida em HTML, CSS, JavaScript, POO e lógica de programação.' },
   { year: 'Ago 2025', title: 'Meus primeiros sistemas grandes', description: 'Rocket Games (ASP.NET Core MVC) foi meu primeiro sistema completo — arquitetura MVC, autenticação, banco de dados e CRUD. Em paralelo, minhas primeiras APIs REST com Node.js e Express, e o início de Flutter e Dart.' },
-  { year: '2025', title: 'Sistemas ASP.NET completos', description: 'Olimpíadas Wiki, Salão de Beleza e Biblioteca consolidaram meu domínio de aplicações web completas em ASP.NET Core MVC, enquanto continuava estudando Node.js em paralelo.' },
-  { year: 'TCC', title: 'Partiu Destino', description: 'Meu maior projeto: backend próprio em Node.js e Express, painel administrativo em ASP.NET Core MVC e aplicativo mobile em Flutter, com integração completa entre as três camadas. Reconhecido como um dos melhores projetos da turma.' },
+  { year: 'Set 2025 - julho 2026', title: 'Sistemas ASP.NET completos', description: 'Olimpíadas Wiki, Salão de Beleza e Biblioteca consolidaram meu domínio de aplicações web completas em ASP.NET Core MVC, enquanto continuava estudando Node.js em paralelo.' },
+  { year: 'Jan 2026 - Julho 2026 ', title: 'Partiu Destino', description: 'Meu maior projeto: backend próprio em Node.js e Express, painel administrativo em ASP.NET Core MVC e aplicativo mobile em Flutter, com integração completa entre as três camadas. Reconhecido como um dos melhores projetos da turma.' },
   { year: 'Pós-curso', title: 'Origamid: Node.js & TypeScript', description: 'Aprofundando APIs, arquitetura, organização de projetos, tipagem e boas práticas — meu foco definitivamente voltado para back-end.' },
   { year: 'Hoje', title: 'Este Portfólio', description: 'Construído com Node.js, Express, TypeScript e PostgreSQL — e também meu playground para aprender Docker, deploy e DevOps. Representa minha evolução até este momento.' },
 ];

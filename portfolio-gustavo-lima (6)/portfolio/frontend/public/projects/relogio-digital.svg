@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g8)" />
+  <rect x="260" y="210" width="1080" height="580" rx="44" fill="#ffffff" opacity="0.10" />
+  <rect x="420" y="290" width="340" height="260" rx="30" fill="#ccfbf1" opacity="0.16" />
+  <text x="430" y="470" fill="#ccfbf1" font-size="84" font-family="Segoe UI, Arial, sans-serif" font-weight="700">12:34</text>
+  <text x="430" y="620" fill="#f0fdfa" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Relógio Digital</text>
+  <text x="430" y="680" fill="#ccfbf1" font-size="32" font-family="Segoe UI, Arial, sans-serif">Projeto com JavaScript e DOM</text>
+</svg>

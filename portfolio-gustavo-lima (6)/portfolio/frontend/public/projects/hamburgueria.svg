@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#431407" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g7)" />
+  <rect x="220" y="190" width="1160" height="620" rx="40" fill="#ffffff" opacity="0.10" />
+  <rect x="300" y="290" width="300" height="170" rx="24" fill="#fef3c7" opacity="0.18" />
+  <rect x="300" y="520" width="420" height="24" rx="12" fill="#fed7aa" />
+  <rect x="300" y="570" width="360" height="24" rx="12" fill="#fdba74" />
+  <text x="300" y="690" fill="#fff7ed" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Hamburgueria</text>
+  <text x="300" y="748" fill="#ffedd5" font-size="32" font-family="Segoe UI, Arial, sans-serif">Sistema com regras de negócio</text>
+</svg>
